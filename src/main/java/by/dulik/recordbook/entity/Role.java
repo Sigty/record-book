@@ -1,8 +1,9 @@
 package by.dulik.recordbook.entity;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Role {
+public class Role implements Serializable {
 
     private String role;
 
@@ -18,13 +19,9 @@ public class Role {
         this.role = role;
     }
 
-    public static Role createRole(String role) {
-        return new Role(role);
-    }
-
     @Override
     public String toString() {
-        return "Role : " + role;
+        return " " + role;
     }
 
     @Override

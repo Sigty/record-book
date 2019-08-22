@@ -1,8 +1,9 @@
 package by.dulik.recordbook.entity;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class PhoneNumber {
+public class PhoneNumber implements Serializable {
 
     private String number;
 
@@ -18,13 +19,9 @@ public class PhoneNumber {
         this.number = number;
     }
 
-    public static PhoneNumber createPhoneNumber(String number) {
-        return new PhoneNumber(number);
-    }
-
     @Override
     public String toString() {
-        return "PhoneNumber : " + number;
+        return " " + number;
     }
 
     @Override
